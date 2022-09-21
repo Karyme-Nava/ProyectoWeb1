@@ -11,7 +11,16 @@ padding-top: 10px;
  
     }
 
+    header nav{
+        grid-area: nav; 
+    }
+
     h1 {
+        text-align: center;
+        font-size: 25px;
+    }
+
+    h2 {
         text-align: center;
         font-size: 25px;
     }
@@ -37,15 +46,177 @@ padding-top: 10px;
             border: 20px;
            }
 
-           table {
-            border: 4px;
-            border-color: aqua;
+           .indice {
+            width: 100%;
+           }
+           
+           .semestres {
+            align-items: center;
+            width: 79%;
+           }
+
+           .semestres th {
+            font-weight: normal;
+            font-family: sans-serif;
+            max-width: 20px;
+           }
+
+           
+           .zoom {
+            overflow:hidden;
+            height: 300px;
+            max-height: 120px;
+           }
+
+           .zoom button{
+            width: 100%;
+            transition: 0.5s all ease-in-out;
+           }
+
+
+           .zoom:hover button{
+            transform: scale(1.5);
+           }
+
+           .zoom2 {
+            overflow: hidden;
+            max-height: 120px;
+           }
+
+           .zoom2 button{
+            width: 100%;
+            transition: 0.5s all ease-in-out;
+           }
+           
+
+           .zoom2:hover button{
+            transform: scale(1.5);
+           }
+
+           .zoom3 {
+            overflow: hidden;
+            max-height: 120px;
+           }
+
+           .zoom3 button {
+            width: 100%;
+            transition: 0.5s all ease-in-out;
+           }
+           
+
+           .zoom3:hover button{
+            transform: scale(1.5);
+           }
+
+           .zoom4 {
+            overflow: hidden;
+            max-height: 120px;
+           }
+
+           .zoom4 button{
+            width: 100%;
+            transition: 0.5s all ease-in-out;
+           }
+           
+
+           .zoom4:hover button{
+            transform: scale(1.5);
+           }
+
+           .zoom5 {
+            overflow: hidden;
+            max-height: 120px;
+           }
+
+           .zoom5 button{
+            width: 100%;
+            transition: 0.5s all ease-in-out;
+           }
+           
+
+           .zoom5:hover button{
+            transform: scale(1.5);
+           }
+
+           .zoom6 {
+            overflow: hidden;
+            max-height: 120px;
+           }
+
+           .zoom6 button{
+            width: 100%;
+            transition: 0.5s all ease-in-out;
+           }
+           
+
+           .zoom6:hover button{
+            transform: scale(1.5);
+           }
+
+           .zoom7 {
+            overflow: hidden;
+            max-height: 120px;
+           }
+
+           .zoom7 button{
+            width: 100%;
+            transition: 0.5s all ease-in-out;
+           }
+           
+
+           .zoom7:hover button{
+            transform: scale(1.5);
+           }
+
+           .zoom8 {
+            overflow: hidden;
+            max-height: 120px;
+           }
+
+           .zoom8 button{
+            width: 100%;
+            transition: 0.5s all ease-in-out;
+           }
+           
+           .zoom8:hover button{
+            transform: scale(1.5);
+           }
+
+           .zoom9 {
+            overflow: hidden;
+            max-height: 120px;
+           }
+
+           .zoom9 button{
+            width: 100%;
+            transition: 0.5s all ease-in-out;
+           }
+           
+
+           .zoom9:hover button{
+            transform: scale(1.5);
+           }
+
+           button {
+            width: 250px;
+            height: 120px;
+            font-size: 1.5rem;
+            background-color: #39772F;
+            border: #39772F;
+            color:antiquewhite;
+            
            }
 
            #inicioSesion ul {
             list-style-type: none;
             text-align: center;
             padding-top: 10px;
+            }
+
+            #inicioSesion a {
+                align-items: center;
+             color: rgb(224, 224, 224);   
+
             }
             
             #inicioSesion li {
@@ -80,4 +251,16 @@ padding-top: 10px;
     background-color: #39772F;
     height: 60px;
     color: white;
+    height: 80px;
+}
+
+.main{
+    border-color: aliceblue #39772F;
+    border-width: 5px;
+    border-style: solid;
+    border-left: 0px;
+}
+
+.main a{
+    color: rgb(0, 0, 0);
 }
