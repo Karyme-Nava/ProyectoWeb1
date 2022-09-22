@@ -18,9 +18,10 @@
          -->
          <nav id="titulo">
             <table class="indice"> 
-                <th> <img src="../itsurLOGO.png" height="50" align=left/> </th>
+                <th> <img src="../../itsurLOGO.png" height="50" align=left/> </th>
                 <th class="titulo2"> <h1> Plataforma con recomendaciones y consejos </h1> </th>
                 <th> 
+                    <br>
                     <nav id="inicioSesion"> 
                     <a href="#">Iniciar sesion</a>
                     </nav>
@@ -93,46 +94,107 @@
        <section>
         <article>
             <h2> Ing en Sistemas Computacionales </h2>
-            <table>
-                <tr> 
-                    <form action="">
-                    <th> <button> Semestre 1 </button> </th>
-                    </form>
-                    <form action="">
-                    <th> <button> Semestre 2 </button> </th>
-                   </form>
-                   <form action="">
-                    <th> <button> Semestre 3 </button> </th>
-                   </form>
-                </tr>
-
-                <tr> 
-                    <form action="">
-                    <th> <button> Semestre 4 </button> </th>
-                </form>
-                <form action="">
-                    <th> <button> Semestre 5 </button> </th>
-                </form>
-                <form action="">
-                    <th> <button> Semestre 6 </button> </th>
-                </form>
-                </tr>
-
-                    <tr> 
-                        <form action="../html/materiasSistemasComputacionales/desarrolloWeb.html">
-                        <th> <button> Semestre 7 </button> </th>
-                    </form>
-                    <form action="">
-                        <th> <button> Semestre 8 </button> </th>
-                    </form>
-                    <form action="">
-                        <th> <button> Semestre 9 </button> </th>
-                    </form>
-                    </tr>
-            </table>
-
+            <div class="semestreNum">
+                <h1> Ing en Sistemas Computacionales </h1>
+                <h3> <p> Semestre 7 </p> </h3>
+            </div>
+            <div class="nombreMateria">
+                <h2> Desarrollo web </h2>
+                <h3> Libros </h3>  
+            </div>
+            <div class="descripcionMateria">
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                    when an unknown printer took a galley of type and scrambled it to make a type 
+                    specimen book. It has survived not only five centuries, but also the leap into 
+                    electronic typesetting, remaining essentially unchanged.
+                </p>
+            </div>
         </article>
     </section> 
+
+    
+        <h2> Agregar información sobre materia </h2>
+        <form name="newPublicacion">
+            <table class="registro">
+                <tr>
+                    <th>
+            <label for="SelectSemestre"> Semestre </label>
+                    </th>
+                    <th>
+            <select name="SelectSemestre" id="SelectSemestre">
+                <option name="SelectSemestre">
+                    <option value="1"> Semestre 1 </option>
+                    <option value="2"> Semestre 2 </option>
+                    <option value="3"> Semestre 3 </option>
+                    <option value="4"> Semestre 4 </option>
+                    <option value="5"> Semestre 5 </option>
+                    <option value="6"> Semestre 6 </option>
+                    <option value="7"> Semestre 7 </option>
+                    <option value="8"> Semestre 8 </option>
+                    <option value="9"> Semestre 9 </option>
+                </option>
+            </select>
+        </th>
+                </tr>
+                <tr>
+                    <th>
+            <label for="SelectCarrera"> Carrera</label>
+            </th>
+            <th>
+                <select name="SelectCarrera" id="SelectCarrera">
+            <option name="SelectCarrera">
+                <option value="1"> Ing. En Sistemas Computacionales </option>
+                <option value="2"> Ing. En Sistemas Automotriz </option>
+                <option value="3"> Ing. Electronica </option>
+                <option value="4"> Ing. Ambiental </option>
+                <option value="5"> Ing. En Gestion Empresarial </option>
+                <option value="6"> Ing. Industrial </option>
+                <option value="7"> Lic. En Gastronomia</option>
+            </option>
+        </select>
+        <br>
+    </th>
+    </tr>
+
+    <tr>
+        <th>
+        <label for="materia"> Materia </label>
+    </th>
+    
+    <th>
+    <input name="materia" id="materia" type="text">
+    </th>
+    </tr>
+
+    <tr>
+        <th>
+    <label for="SelectCategorias"> Tipo de informacion a compartir </label>
+        </th>
+        <th>
+    <select name="SelectCategorias" id="SelectCategorias">
+        <option name="SelectCategorias">
+            <option value="1"> (aqui ingresan la categoria que deseen) </option>
+            <option value="2"> (aqui ingresan la categoria que deseen) </option>
+            <option value="3"> (aqui ingresan la categoria que deseen) </option>
+            <option value="4"> (aqui ingresan la categoria que deseen) </option>
+            <option value="5"> (aqui ingresan la categoria que deseen) </option>
+        </option>
+    </select>
+</th>
+</tr>
+
+<tr>
+    <td class="publicar" colspan="5"> 
+        <div class="zoomPublicar">
+        <button> Publicar </button>
+     </div>
+    </td>
+</tr>
+
+</table>
+</form>
        <footer><img src="../img/.png"/ width="100%" height="50" alt="Aqui pondremos nuestra informacion de contacto si les parece"></footer> <!-- pie de pagina -->
     </body>
 </html>
