@@ -1,13 +1,12 @@
 #navegacion ul {
 list-style-type: none;
 text-align: center;
-padding-top: 10px;
+padding-top: 20px;
 }
 
 #navegacion li {
  display:inline;
  text-align: center;
- margin: 0 10px 0 0;
  
     }
 
