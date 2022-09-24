@@ -277,6 +277,8 @@ aside.main{
     border-style: solid;
     border-left: 0px;
     background-color: #FFFFFF;
+    position: relative;
+    left: -20px;
 }
 
 select {
@@ -328,6 +330,10 @@ select {
 
 .main a{
     color: rgb(0, 0, 0);
+}
+
+.main ul{
+    list-style-type: none;
 }
 
   
