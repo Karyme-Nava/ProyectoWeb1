@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Recomendaciones y consejos </title>
+        <link rel="stylesheet"  href="../css/paginaWEB.css"/>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <meta charset='utf-8'>  
+        <style>
+           form {border: 3px solid #f1f1f1;}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  height: 20%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.cancelbtn {
+  width: 20%;
+  height: 20%;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+img.avatar {
+  width: 20%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 10px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+            </style>
+    </head>
+    <body>
+        <header> <!-- encabezado -->
+            <div>
+            <!--
+                <nav id="cabeza">
+                    <p> Aqui podremos poner algo o una imagen</p>
+                </nav>
+            -->
+            
+            <!--     <img src="../img/.jpg" width="80" height="80" alt="Aun no hay imagen predefinida para el indice"/>
+             -->
+             <nav id="titulo">
+                <table class="indice"> 
+                    <th> <img src="../itsurLOGO.png" height="70" align=left/> </th>
+                    <th> <h1> Plataforma con recomendaciones y consejos </h1> </th>
+                    <th> 
+                        <nav id="inicioSesion"> 
+                            <br>
+                            <a href="registro.html">Registrarse</a>
+                            <a href="iniciarSesion.html">/ Iniciar Sesión</a>
+                        </nav>
+                    </th>
+                </table>
+         
+        </div>
+
+        <nav id="navegacion">    
+            <ul>
+             <li> <a href="general.html">General</a> </li>
+             <li> <a href="sistemasComputacionales.html">Ing. En Sistemas Computacionales</a> </li>
+             <li> <a href="sistemasAutomotrices.html">Ing. En Sistemas Automotrices</a> </li>
+             <li> <a href="electronica.html">Ing. Electrónica</a> </li>
+             <li> <a href="ambiental.html">Ing. Ambiental</a> </li>
+             <li> <a href="gestionEmpresarial.html">Ing. En Gestión Empresarial</a></li>
+             <li> <a href="industrial.html">Ing. Industrial</a></li>
+             <li> <a href="gastronomia.html">Lic. En Gastronomía</a> </li>
+            </ul>
+        </nav>
+
+       </header> <!-- fin de encabezado -->
+       <!--
+       <aside>
+        <nav id="inicioSesion">    
+            <ul>
+             <li> <a href="#">Iniciar sesion</a> </li>
+             <li> <a href="#">Registrarte</a> </li>
+            </ul>
+           </nav>
+
+       </aside>
+    -->
+       <!-- nav -->
+
+ 
+       <section class="articles">
+        <article> <!-- Aqui poner el inicio de sesion-->
+          <form >
+            <div class="imgcontainer">
+              <img src="../img/login.png" alt="Avatar" class="avatar">
+            </div>
+          
+            <div class="container">
+              <label for="uname"><b>Email</b></label>
+              <input type="text" placeholder="Introducir Email" name="uname" required>
+          
+              <label for="psw"><b>Contraseña</b></label>
+              <input type="password" placeholder="Introducir Contraseña" name="psw" required>
+                  
+              <button type="submit">Iniciar Sesión</button>
+              <label>
+                <input type="checkbox" checked="checked" name="remember"> Recordarme
+              </label>
+            </div>
+          
+            <div class="container" style="background-color:#f1f1f1">
+              <button type="button" class="cancelbtn">Cancelar</button>
+              <span class="psw"><a href="#">¿Olvidaste la contraseña?</a></span>
+            </div>
+          </form>
+        </article>
+
+     <!--  <footer><img src="../img/.png"/ width="100%" height="50" alt="Aqui pondremos nuestra informacion de contacto si les parece"></footer> pie de pagina -->
+    </body>
+</html>

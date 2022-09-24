@@ -110,6 +110,21 @@ width: 100%;
     display: inline-block;
 }
 
+.materias {
+    align-items: center;
+    width: 100%;
+    padding: 2%;
+}
+
+.materia {
+    font-weight: normal;
+    width: 90%;
+    margin-top: 20px;
+    border-width: 0px;
+    border-style: solid;
+    display: inline-block;
+}
+
 .publicar{
 font-weight: normal;
 font-family: sans-serif;
@@ -160,7 +175,6 @@ font-size: 1.5rem;
 background-color: #39772F;
 border: #39772F;
 color:antiquewhite;
-
 }
 
 #inicioSesion ul {
