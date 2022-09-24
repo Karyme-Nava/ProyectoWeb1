@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Recomendaciones y consejos </title>
+        <link rel="stylesheet"  href="../css/paginaWEB.css"/>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <meta charset='utf-8'>  
+        <style>
+            /* Full-width input fields */
+            input[type=text], input[type=password] {
+              width: 95%;
+              padding: 15px;
+              margin: 5px 0 22px 0;
+              display: inline-block;
+              border: none;
+              background: #f1f1f1;
+            }
+            
+            input[type=text]:focus, input[type=password]:focus {
+              background-color: #ddd;
+              outline: none;
+            }
+            
+            hr {
+              border: 1px solid #f1f1f1;
+              margin-bottom: 25px;
+            }
+            
+            /* Set a style for all buttons */
+            button {
+              background-color: #04AA6D;
+              color: white;
+              padding: 14px 20px;
+              margin: 8px 0;
+              border: none;
+              cursor: pointer;
+              width: 100%;
+              opacity: 0.9;
+            }
+            
+            button:hover {
+              opacity:1;
+            }
+            
+            /* Extra styles for the cancel button */
+            .cancelbtn {
+              padding: 14px 20px;
+              background-color: #f44336;
+            }
+            
+            /* Float cancel and signup buttons and add an equal width */
+            .cancelbtn, .signupbtn {
+              float: left;
+              width: 50%;
+              height: 20%;
+            }
+            
+            /* Add padding to container elements */
+            .container {
+              padding: 16px;
+              background-color: #f5faff;
+            }
+            
+            /* Clear floats */
+            .clearfix::after {
+              content: "";
+              clear: both;
+              display: table;
+            }
+            
+            /* Change styles for cancel button and signup button on extra small screens */
+            @media screen and (max-width: 300px) {
+              .cancelbtn, .signupbtn {
+                 width: 100%;
+              }
+            }
+            </style>
+    </head>
+    <body>
+        <header> <!-- encabezado -->
+            <div>
+            <!--
+                <nav id="cabeza">
+                    <p> Aqui podremos poner algo o una imagen</p>
+                </nav>
+            -->
+            
+            <!--     <img src="../img/.jpg" width="80" height="80" alt="Aun no hay imagen predefinida para el indice"/>
+             -->
+             <nav id="titulo">
+                <table class="indice"> 
+                    <th> <img src="../itsurLOGO.png" height="70" align=left/> </th>
+                    <th> <h1> Plataforma con recomendaciones y consejos </h1> </th>
+                    <th> 
+                        <nav id="inicioSesion"> 
+                            <br>
+                            <a href="registro.html">Registrarse</a>
+                            <a href="iniciarSesion.html">/ Iniciar Sesión</a>
+                        </nav>
+                    </th>
+                </table>
+         
+        </div>
+
+        <nav id="navegacion">    
+            <ul>
+             <li> <a href="general.html">General</a> </li>
+             <li> <a href="sistemasComputacionales.html">Ing. En Sistemas Computacionales</a> </li>
+             <li> <a href="sistemasAutomotrices.html">Ing. En Sistemas Automotrices</a> </li>
+             <li> <a href="electronica.html">Ing. Electrónica</a> </li>
+             <li> <a href="ambiental.html">Ing. Ambiental</a> </li>
+             <li> <a href="gestionEmpresarial.html">Ing. En Gestión Empresarial</a></li>
+             <li> <a href="industrial.html">Ing. Industrial</a></li>
+             <li> <a href="gastronomia.html">Lic. En Gastronomía</a> </li>
+            </ul>
+        </nav>
+
+       </header> <!-- fin de encabezado -->
+       <!--
+       <aside>
+        <nav id="inicioSesion">    
+            <ul>
+             <li> <a href="#">Iniciar sesion</a> </li>
+             <li> <a href="#">Registrarte</a> </li>
+            </ul>
+           </nav>
+
+       </aside>
+    -->
+       <!-- nav -->
+        
+       <section class="articles">
+        <article> <!-- Aqui poner el inicio de sesion-->
+            <form  style="border:1px solid #ccc">
+                <div class="container">
+                  <h1>Registrarse</h1>
+                  <p>Por favor, rellene este formulario para crear una cuenta.</p>
+                  <hr class="hrForm">
+              
+                  <label for="email"><b>Email</b></label>
+                  <input type="text" placeholder="Introducir Email" name="email" required>
+              
+                  <label for="psw"><b>Contraseña</b></label>
+                  <input type="password" placeholder="Introducir Contraseña" name="psw" required>
+              
+                  <label for="psw-repeat"><b>Repetir Contraseña</b></label>
+                  <input type="password" placeholder="Repetir Contraseña" name="psw-repeat" required>
+                  
+                  <label>
+                    <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Recordarme
+                  </label>
+                <div class="clearfix">
+                    <button type="button" class="cancelbtn">Cancelar</button>
+                    <button type="submit" class="signupbtn">Registrarse</button>
+                  </div>
+                </div>
+              </form>
+        </article>
+     <!--  <footer><img src="../img/.png"/ width="100%" height="50" alt="Aqui pondremos nuestra informacion de contacto si les parece"></footer> pie de pagina -->
+    </body>
+</html>
