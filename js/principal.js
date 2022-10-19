@@ -1,13 +1,10 @@
 function contarVisita(){
-    index=document.getElementById("index").isConnected
-    if(index){
-        if(localStorage.getItem('visita')==null){
+    if(localStorage.getItem('visita')==null){
         localStorage.setItem('visita', '0');
     }
-        let visita=JSON.parse(localStorage.getItem('visita'));
-        visita++;
-        localStorage.setItem('visita', JSON.stringify(visita));
-    }
+    let visita=JSON.parse(localStorage.getItem('visita'));
+    visita++;
+    localStorage.setItem('visita', JSON.stringify(visita));
     mostrarVisitantes();  
 }
 
