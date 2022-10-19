@@ -1,13 +1,14 @@
 function contarVisita(){
-    if(localStorage.getItem('visita')==null){
+    index=document.getElementById("index").isConnected
+    if(index){
+        if(localStorage.getItem('visita')==null){
         localStorage.setItem('visita', '0');
     }
-
-    let visita=JSON.parse(localStorage.getItem('visita'));
-    visita++;
-    localStorage.setItem('visita', JSON.stringify(visita));
-
-    mostrarVisitantes();
+        let visita=JSON.parse(localStorage.getItem('visita'));
+        visita++;
+        localStorage.setItem('visita', JSON.stringify(visita));
+    }
+    mostrarVisitantes();  
 }
 
 function mostrarVisitantes(){
