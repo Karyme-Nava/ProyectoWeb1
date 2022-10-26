@@ -1,3 +1,20 @@
+.CerrarSesion {
+    background-color: rgb(255, 94, 0);
+    float: left;
+    height: fit-content;
+    width: fit-content;
+    display: none;
+    border-radius: 30px;
+    padding: 5px;
+    cursor: pointer;
+ }
+
+.mostrarUsuario{
+    height: fit-content;
+    width: fit-content;
+    display: none;
+}
+
 html {
     min-height: 100%;
     position: relative;

@@ -5,6 +5,7 @@
         <link rel="stylesheet"  href="../css/paginaWEB.css"/>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <meta charset='utf-8'>  
+        <script src="../js/principal.js"></script>
     </head>
     <body>
         <header>
@@ -15,9 +16,13 @@
                     <th> 
                         <nav id="inicioSesion"> 
                             <br>
-                            <a href="registro.html">Registrarse</a>
-                            <a href="iniciarSesion.html">/ Iniciar Sesión</a>
+                            <a href="registro.html" id="btnRegistro">Registrarse</a>
+                            <a href="iniciarSesion.html" id="btnInicioS">/ Iniciar Sesión</a>
+                            <p id="mostrarUsuario"></p>
                         </nav>
+                    </th>
+                    <th>
+                      <button type="button" id="btnCerrarS" class="CerrarSesion" onclick="cerrarSesion()">Cerrar Sesion</button>
                     </th>
                 </table>
             </nav>
