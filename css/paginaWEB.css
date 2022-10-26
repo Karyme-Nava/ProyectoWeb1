@@ -25,6 +25,56 @@ body{
      margin-bottom: 40px;
 }
 
+#information {
+    text-align: justify;
+    font-family: Helvetica;
+    border-style: solid;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom-color: #ffffff; 
+}
+
+#information2 {
+    text-align: justify;
+    font-family: Helvetica;
+    border-style: solid;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom-color: #ffffff; 
+}
+
+#information3 {
+    text-align: justify;
+    font-family: Helvetica;
+    border-style: solid;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom-color: #ffffff; 
+}
+
+#information4 {
+    text-align: justify;
+    font-family: Helvetica;
+    border-style: solid;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom-color: #ffffff; 
+}
+
+#information5 {
+    text-align: justify;
+    font-family: Helvetica;
+    border-style: solid;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom-color: #ffffff; 
+}
+
 .visitante{
     max-width: 15vw;
     text-align: center; 
@@ -96,6 +146,7 @@ font-size: 25px;
 
 h4{
     text-align: center;
+    background-color:aliceblue;
 }
 
 .descripcionMateria{
@@ -108,6 +159,43 @@ border-right: 0px;
 border-bottom-color: #AEBB61; 
 }
 
+.descripcionMateria2{
+    border-bottom-color: aliceblue #AEBB61;
+    border-width: 5px;
+    border-style: solid;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom-color: #AEBB61; 
+    }
+
+    .descripcionMateria3{
+        border-bottom-color: aliceblue #AEBB61;
+        border-width: 5px;
+        border-style: solid;
+        border-top: 0px;
+        border-left: 0px;
+        border-right: 0px;
+        border-bottom-color: #AEBB61; 
+        }
+        .descripcionMateria4{
+            border-bottom-color: aliceblue #AEBB61;
+            border-width: 5px;
+            border-style: solid;
+            border-top: 0px;
+            border-left: 0px;
+            border-right: 0px;
+            border-bottom-color: #AEBB61; 
+            }
+            .descripcionMateria5{
+                border-bottom-color: aliceblue #AEBB61;
+                border-width: 5px;
+                border-style: solid;
+                border-top: 0px;
+                border-left: 0px;
+                border-right: 0px;
+                border-bottom-color: #AEBB61; 
+                }
 h1 {
 text-align: center;
 font-size: 25px;
@@ -183,7 +271,7 @@ border-width: 0px;
 border-style: solid;
 }
 
-.zoomPublicar {
+.zoomPublicar.zo {
 text-align: center;
 align-items: center;
 

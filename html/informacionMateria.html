@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Recomendaciones y consejos </title>
+        <link rel="stylesheet"  href="../css/paginaWEB.css"/>
+        <script src="../js/principal.js"> </script>
+        <meta charset='utf-8'>  
+    </head>
+    <body>
+        <header>
+            <nav id="titulo">
+                <table class="indice"> 
+                    <th> <img src="../img/itsurLOGO.png" height="70" align=left/> </th>
+                    <th> <h1> Plataforma con recomendaciones y consejos </h1> </th>
+                    <th> 
+                        <nav id="inicioSesion"> 
+                            <br>
+                            <a href="registro.html">Registrarse</a>
+                            <a href="iniciarSesion.html">/ Iniciar Sesión</a>
+                        </nav>
+                    </th>
+                </table>
+            </nav>
+            <nav id="navegacion">    
+                <ul>
+                <li> <a href="../html/general.html">General</a></li>
+                <li> <a href="../html/sistemasComputacionales.html">Ing. En Sistemas Computacionales</a> </li>
+                <li> <a href="../html/sistemasAutomotrices.html">Ing. En Sistemas Automotrices</a> </li>
+                <li> <a href="../html/electronica.html">Ing. Electrónica</a> </li>
+                <li> <a href="../html/ambiental.html">Ing. Ambiental</a> </li>
+                <li> <a href="../html/gestionEmpresarial.html">Ing. En Gestión Empresarial</a></li>
+                <li> <a href="../html/industrial.html">Ing. Industrial</a></li>
+                <li> <a href="../html/gastronomia.html">Lic. En Gastronomía</a> </li>
+                </ul>
+            </nav>
+        </header>
+
+        <aside class="main">
+            <ul class="menu_izq">
+                <li><a href="../html/informacionMateria.html">Informacion Materia</a></li>
+                <li><a href="../html/general.html">General</a></li>
+                <ul>
+                    <li><a href="#">Foráneos</a></li>
+                    <li><a href="#">Inglés</a></li>
+                    <li><a href="#">Tips de economía</a></li>
+                    <li><a href="#">Trámites</a></li>
+                    <li><a href="#">Transporte</a></li>
+                </ul>
+                <li><a href="../html/electronica.html">Ing. Electrónica</a></li>
+                <li><a href="../html/gestionEmpresarial.html">Ing. Gestión Empresarial</a></li>
+                <li><a href="../html/sistemasComputacionales.html">Ing. Sistemas Computacionales</a></li>
+                <ul>
+                    <li><a href="#">Semestre 1</a></li>
+                    <li><a href="#">Semestre 2</a></li>
+                    <li><a href="#">Semestre 3</a></li>
+                    <li><a href="#">Semestre 4</a></li>
+                    <li><a href="#">Semestre 5</a></li>
+                    <li><a href="#">Semestre 6</a></li>
+                    <li><a href="../html/sistemasS7.html">Semestre 7</a></li>
+                    <ul>
+                        <li><a href="#">Conmutación y enrutamiento de redes</a></li>
+                        <li><a href="#">Gestión de proyectos de software</a></li>
+                        <li><a href="#">Internet de las cosas</a></li>
+                        <li><a href="#">Programación lógica y funcional</a></li>
+                        <li><a href="#">Programación móvil I</a></li>
+                        <li><a href="../html/materiasSistemasComputacionales/programacionWebI.html">Programación web I</a></li>
+                        <li><a href="#">Taller de investigación I</a></li>
+                    </ul>
+                    <li><a href="#">Semestre 8</a></li>
+                    <li><a href="#">Semestre 9</a></li>
+                </ul>
+            </ul>
+        </aside>
+
+        <section>
+            <article>
+                <h3> Agregar información sobre materia </h3>
+                <form name="newPublicacion">
+                    <table class="registro">
+                        <tr>
+                            <th>
+                                <label for="SelectCarrera"> Carrera</label>
+                            </th>
+                            <th>
+                                <select name="SelectCarrera" id="SelectCarrera">
+                                        <option value="Ing. En Sistemas Computacionales"> Ing. En Sistemas Computacionales </option>
+                                        <option value="Ing. En Sistemas Automotriz"> Ing. En Sistemas Automotriz </option>
+                                        <option value="Ing. Electronica"> Ing. Electronica </option>
+                                        <option value="Ing. Ambiental"> Ing. Ambiental </option>
+                                        <option value="Ing. En Gestion Empresarial"> Ing. En Gestion Empresarial </option>
+                                        <option value="Ing. Industrial"> Ing. Industrial </option>
+                                        <option value="Lic. En Gastronomia"> Lic. En Gastronomia</option>
+                                    </option>
+                                </select>
+                            </th>
+                        </tr>
+
+                            <th>
+                                <label for="SelectSemestre"> Semestre </label>
+                            </th>
+                            <th>
+                                <select name="SelectSemestre" id="SelectSemestre">
+                                        <option value="Semestre 1"> Semestre 1 </option>
+                                        <option value="Semestre 2"> Semestre 2 </option>
+                                        <option value="Semestre 3"> Semestre 3 </option>
+                                        <option value="Semestre 4"> Semestre 4 </option>
+                                        <option value="Semestre 5"> Semestre 5 </option>
+                                        <option value="Semestre 6"> Semestre 6 </option>
+                                        <option value="Semestre 7"> Semestre 7 </option>
+                                        <option value="Semestre 8"> Semestre 8 </option>
+                                        <option value="Semestre 9"> Semestre 9 </option>
+                                    </option>
+                                </select>
+                            </th>
+                        </tr>
+                    
+                        <tr>
+                            <th>
+                                <label for="SelectMateria"> Materia </label>
+                            </th>
+                            <th>
+                                <select name="SelectMateria" id="SelectMateria">
+                                        <option id="1" value="Programación web I"> Programación web I </option>
+                                        <option id="2" value="Programación movil I"> Programación movil I </option>
+                                        <option id="3" value="Conmutacion y enrutacion de redes"> Conmutacion y enrutacion de redes </option>
+                                        <option id="4" value="Gestion de proyectos de software"> Gestion de proyectos de software </option>
+                                        <option id="5" value="Programacion logica y funcional"> Programacion logica y funcional </option>
+                                        <option id="6" value="Taller de investigacion"> Taller de investigacion </option>
+                                        <option id="7" value="Internet de las cosas"> Internet de las cosas </option>
+                                </select>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                                <label for="SelectTipos"> Tipo de informacion a compartir </label>
+                            </th>
+                            <th>
+                                <select name="SelectTipos" id="SelectTipos">
+                                        <option id="1" value="Texto"> Texto </option>
+                                </select>
+                            </th>
+                        </tr>
+
+                        <tr>
+                            <th>
+                                <label for="titleInformacion"> Titulo de la Informacion </label>
+                            </th>
+                            <th>
+                                <input id="titulotext" type="text" placeholder='Titulo' name='titulotext'></input>                                
+                            </th>
+                        </tr>
+
+                        <tr>
+                            <th>
+                                <label for="informacionCompartir"> Informacion a compartir </label>
+                            </th>
+                            <th>
+                                <input id="texto" type="text" placeholder='Informacion' name='texto' style="width : 400px;"></input>                                
+                            </th>
+                        </tr>
+                        <br>
+                        <tr>
+                            <td class="publicar" colspan="5"> 
+                                <div class="zoomPublicar">
+                                    <button type="button" id="submitt" onclick="registro()"> Publicar </button>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="publicar" colspan="5"> 
+                                <div class="zoomPublicar">
+                                    <button type="button" id="resetear" onclick="window.location.reload()"> Agregar nueva informacion </button>
+                                    <p id="basura"> </p>
+                            </td>
+                        </tr>
+                        
+                    </table>
+                </form>
+            </article>
+        </section> 
+        <footer>
+            <!-- <img src="../img/.png"/ width="100%" height="50" alt="Aqui pondremos nuestra informacion de contacto si les parece"></footer> -->
+            <!-- pie de pagina -->
+    </body>
+</html>
