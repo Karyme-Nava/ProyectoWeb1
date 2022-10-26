@@ -3,9 +3,11 @@
     <head>
         <title> Recomendaciones y consejos </title>
         <link rel="stylesheet"  href="../../css/paginaWEB.css"/>
+        <script src="../../js/principal.js"> </script>
         <meta charset='utf-8'>  
     </head>
-    <body>
+    <body onload="load()">
+        <!-- <body onload="load()"> -->
         <header>
             <nav id="titulo">
                 <table class="indice"> 
@@ -36,6 +38,7 @@
 
         <aside class="main">
             <ul class="menu_izq">
+                <li> <a href="../informacionMateria.html"> Informacion Materia</a></li>
                 <li><a href="../general.html">General</a></li>
                 <ul>
                     <li><a href="#">Foráneos</a></li>
@@ -71,106 +74,38 @@
         </aside>
 
         <section>
-            <article>
-                <div class="semestreNum">
-                    <h2> Ing en Sistemas Computacionales </h1>
-                    <center><p> Semestre 7 </p></center>
+            <article>   
+                <div class="informacionForMatters">
+                    <h4 id="title">  </h4>
+                    <p id="information" class="information"></p>
+
+                    <h4 id="title2"> </h4>
+                    <p id="information2" class="information2"></p>
+            
+
+                    <h4 id="title3"> </h4>
+                    <p id="information3" class="information3"></p>
+
+
+                    <h4 id="title4"> </h4>
+                    <p id="information4" class="information4"></p>
+
+                    <h4 id="title5"> </h4>
+                    <p id="information5" class="information5"></p>
                 </div>
-                <div class="nombreMateria">
-                    <h3> Programación web I </h3>
-                    <h4> Libros </h4>  
-                </div>
-                <div class="descripcionMateria">
-                    <p>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                        when an unknown printer took a galley of type and scrambled it to make a type 
-                        specimen book. It has survived not only five centuries, but also the leap into 
-                        electronic typesetting, remaining essentially unchanged.
-                    </p>
-                </div>
-            </article>
-            <article>
-                <h3> Agregar información sobre materia </h3>
-                <form name="newPublicacion">
-                    <table class="registro">
-                        <tr>
-                            <th>
-                                <label for="SelectCarrera"> Carrera</label>
-                            </th>
-                            <th>
-                                <select name="SelectCarrera" id="SelectCarrera">
-                                    <option name="SelectCarrera">
-                                        <option value="1"> Ing. En Sistemas Computacionales </option>
-                                        <option value="2"> Ing. En Sistemas Automotriz </option>
-                                        <option value="3"> Ing. Electronica </option>
-                                        <option value="4"> Ing. Ambiental </option>
-                                        <option value="5"> Ing. En Gestion Empresarial </option>
-                                        <option value="6"> Ing. Industrial </option>
-                                        <option value="7"> Lic. En Gastronomia</option>
-                                    </option>
-                                </select>
-                            </th>
-                        </tr>
-                        <tr>
-                            <th>
-                                <label for="SelectSemestre"> Semestre </label>
-                            </th>
-                            <th>
-                                <select name="SelectSemestre" id="SelectSemestre">
-                                    <option name="SelectSemestre">
-                                        <option value="1"> Semestre 1 </option>
-                                        <option value="2"> Semestre 2 </option>
-                                        <option value="3"> Semestre 3 </option>
-                                        <option value="4"> Semestre 4 </option>
-                                        <option value="5"> Semestre 5 </option>
-                                        <option value="6"> Semestre 6 </option>
-                                        <option value="7"> Semestre 7 </option>
-                                        <option value="8"> Semestre 8 </option>
-                                        <option value="9"> Semestre 9 </option>
-                                    </option>
-                                </select>
-                            </th>
-                        </tr>
-                        <tr>
-                            <th>
-                                <label for="materia"> Materia </label>
-                            </th>
-                            <th>
-                                <select name="SelectMateria" id="SelectMateria">
-                                    <option name="SelectMateria">
-                                        <option value="1"> Programación web I </option>
-                                    </option>
-                                </select>
-                            </th>
-                        </tr>
-                        <tr>
-                            <th>
-                                <label for="SelectCategorias"> Tipo de informacion a compartir </label>
-                            </th>
-                            <th>
-                                <select name="SelectCategorias" id="SelectCategorias">
-                                    <option name="SelectCategorias">
-                                        <option value="1"> (aqui ingresan la categoria que deseen) </option>
-                                        <option value="2"> (aqui ingresan la categoria que deseen) </option>
-                                        <option value="3"> (aqui ingresan la categoria que deseen) </option>
-                                        <option value="4"> (aqui ingresan la categoria que deseen) </option>
-                                        <option value="5"> (aqui ingresan la categoria que deseen) </option>
-                                    </option>
-                                </select>
-                            </th>
-                        </tr>
-                        <tr>
-                            <td class="publicar" colspan="5"> 
-                                <div class="zoomPublicar">
-                                    <button> Publicar </button>
-                                </div>
-                            </td>
-                        </tr>
-                    </table>
-                </form>
+                <!--
+                <script> 
+                    let value = storage.getItem('key');
+                    value = JSON.parse(value);
+
+                    let mydiv = document.createElement('div');
+                    mydiv.classList.add('ejemplo')
+                    mydiv.innerHTML = "<h4> Hola</h4> <p>Tt </p>"+value
+                    document.getElementById('padre').appendChild(mydiv)
+                </script>   
+                -->
             </article>
         </section> 
-        <footer><img src="../img/.png"/ width="100%" height="50" alt="Aqui pondremos nuestra informacion de contacto si les parece"></footer> <!-- pie de pagina -->
+        <footer><img src=""/ width="100%" height="50" alt="Aqui pondremos nuestra informacion de contacto si les parece"></footer> <!-- pie de pagina -->
     </body>
 </html>

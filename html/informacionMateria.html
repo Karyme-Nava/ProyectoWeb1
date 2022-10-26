@@ -23,21 +23,22 @@
             </nav>
             <nav id="navegacion">    
                 <ul>
-                <li> <a href="../general.html">General</a> </li>
-                <li> <a href="../sistemasComputacionales.html">Ing. En Sistemas Computacionales</a> </li>
-                <li> <a href="../sistemasAutomotrices.html">Ing. En Sistemas Automotrices</a> </li>
-                <li> <a href="../electronica.html">Ing. Electrónica</a> </li>
-                <li> <a href="../ambiental.html">Ing. Ambiental</a> </li>
-                <li> <a href="../gestionEmpresarial.html">Ing. En Gestión Empresarial</a></li>
-                <li> <a href="../industrial.html">Ing. Industrial</a></li>
-                <li> <a href="../gastronomia.html">Lic. En Gastronomía</a> </li>
+                <li> <a href="../html/general.html">General</a></li>
+                <li> <a href="../html/sistemasComputacionales.html">Ing. En Sistemas Computacionales</a> </li>
+                <li> <a href="../html/sistemasAutomotrices.html">Ing. En Sistemas Automotrices</a> </li>
+                <li> <a href="../html/electronica.html">Ing. Electrónica</a> </li>
+                <li> <a href="../html/ambiental.html">Ing. Ambiental</a> </li>
+                <li> <a href="../html/gestionEmpresarial.html">Ing. En Gestión Empresarial</a></li>
+                <li> <a href="../html/industrial.html">Ing. Industrial</a></li>
+                <li> <a href="../html/gastronomia.html">Lic. En Gastronomía</a> </li>
                 </ul>
             </nav>
         </header>
 
         <aside class="main">
             <ul class="menu_izq">
-                <li><a href="../general.html">General</a></li>
+                <li><a href="../html/informacionMateria.html">Informacion Materia</a></li>
+                <li><a href="../html/general.html">General</a></li>
                 <ul>
                     <li><a href="#">Foráneos</a></li>
                     <li><a href="#">Inglés</a></li>
@@ -45,9 +46,9 @@
                     <li><a href="#">Trámites</a></li>
                     <li><a href="#">Transporte</a></li>
                 </ul>
-                <li><a href="../electronica.html">Ing. Electrónica</a></li>
-                <li><a href="../gestionEmpresarial.html">Ing. Gestión Empresarial</a></li>
-                <li><a href="../sistemasComputacionales.html">Ing. Sistemas Computacionales</a></li>
+                <li><a href="../html/electronica.html">Ing. Electrónica</a></li>
+                <li><a href="../html/gestionEmpresarial.html">Ing. Gestión Empresarial</a></li>
+                <li><a href="../html/sistemasComputacionales.html">Ing. Sistemas Computacionales</a></li>
                 <ul>
                     <li><a href="#">Semestre 1</a></li>
                     <li><a href="#">Semestre 2</a></li>
@@ -55,14 +56,14 @@
                     <li><a href="#">Semestre 4</a></li>
                     <li><a href="#">Semestre 5</a></li>
                     <li><a href="#">Semestre 6</a></li>
-                    <li><a href="../sistemasS7.html">Semestre 7</a></li>
+                    <li><a href="../html/sistemasS7.html">Semestre 7</a></li>
                     <ul>
                         <li><a href="#">Conmutación y enrutamiento de redes</a></li>
                         <li><a href="#">Gestión de proyectos de software</a></li>
                         <li><a href="#">Internet de las cosas</a></li>
                         <li><a href="#">Programación lógica y funcional</a></li>
                         <li><a href="#">Programación móvil I</a></li>
-                        <li><a href="programacionWebI.html">Programación web I</a></li>
+                        <li><a href="../html/materiasSistemasComputacionales/programacionWebI.html">Programación web I</a></li>
                         <li><a href="#">Taller de investigación I</a></li>
                     </ul>
                     <li><a href="#">Semestre 8</a></li>
@@ -76,47 +77,43 @@
                 <h3> Agregar información sobre materia </h3>
                 <form name="newPublicacion">
                     <table class="registro">
-                        <!--
                         <tr>
                             <th>
                                 <label for="SelectCarrera"> Carrera</label>
                             </th>
                             <th>
                                 <select name="SelectCarrera" id="SelectCarrera">
-                                    <option name="SelectCarrera">
-                                        <option value="1"> Ing. En Sistemas Computacionales </option>
-                                        <option value="2"> Ing. En Sistemas Automotriz </option>
-                                        <option value="3"> Ing. Electronica </option>
-                                        <option value="4"> Ing. Ambiental </option>
-                                        <option value="5"> Ing. En Gestion Empresarial </option>
-                                        <option value="6"> Ing. Industrial </option>
-                                        <option value="7"> Lic. En Gastronomia</option>
+                                        <option value="Ing. En Sistemas Computacionales"> Ing. En Sistemas Computacionales </option>
+                                        <option value="Ing. En Sistemas Automotriz"> Ing. En Sistemas Automotriz </option>
+                                        <option value="Ing. Electronica"> Ing. Electronica </option>
+                                        <option value="Ing. Ambiental"> Ing. Ambiental </option>
+                                        <option value="Ing. En Gestion Empresarial"> Ing. En Gestion Empresarial </option>
+                                        <option value="Ing. Industrial"> Ing. Industrial </option>
+                                        <option value="Lic. En Gastronomia"> Lic. En Gastronomia</option>
                                     </option>
                                 </select>
                             </th>
                         </tr>
-                    -->
-                        <!-- <tr>
+
                             <th>
                                 <label for="SelectSemestre"> Semestre </label>
                             </th>
                             <th>
                                 <select name="SelectSemestre" id="SelectSemestre">
-                                    <option name="SelectSemestre">
-                                        <option value="1"> Semestre 1 </option>
-                                        <option value="2"> Semestre 2 </option>
-                                        <option value="3"> Semestre 3 </option>
-                                        <option value="4"> Semestre 4 </option>
-                                        <option value="5"> Semestre 5 </option>
-                                        <option value="6"> Semestre 6 </option>
-                                        <option value="7"> Semestre 7 </option>
-                                        <option value="8"> Semestre 8 </option>
-                                        <option value="9"> Semestre 9 </option>
+                                        <option value="Semestre 1"> Semestre 1 </option>
+                                        <option value="Semestre 2"> Semestre 2 </option>
+                                        <option value="Semestre 3"> Semestre 3 </option>
+                                        <option value="Semestre 4"> Semestre 4 </option>
+                                        <option value="Semestre 5"> Semestre 5 </option>
+                                        <option value="Semestre 6"> Semestre 6 </option>
+                                        <option value="Semestre 7"> Semestre 7 </option>
+                                        <option value="Semestre 8"> Semestre 8 </option>
+                                        <option value="Semestre 9"> Semestre 9 </option>
                                     </option>
                                 </select>
                             </th>
                         </tr>
-                    -->
+                    
                         <tr>
                             <th>
                                 <label for="SelectMateria"> Materia </label>
@@ -165,13 +162,18 @@
                         <tr>
                             <td class="publicar" colspan="5"> 
                                 <div class="zoomPublicar">
-                                    <button type="button" id="submit" onclick="registro()"> Publicar </button>
-                                    <div id="container"></div>
-                                </div>
-                                <div id="container2"></div>
-                                </div>
+                                    <button type="button" id="submitt" onclick="registro()"> Publicar </button>
                             </td>
                         </tr>
+                        
+                        <tr>
+                            <td class="publicar" colspan="5"> 
+                                <div class="zoomPublicar">
+                                    <button type="button" id="resetear" onclick="window.location.reload()"> Agregar nueva informacion </button>
+                                    <p id="basura"> </p>
+                            </td>
+                        </tr>
+                        
                     </table>
                 </form>
             </article>
