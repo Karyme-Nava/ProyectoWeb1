@@ -229,6 +229,7 @@ function insertar(obj){
 })*/
 
 function load(){
+    if(localStorage.getItem('InformacionParaCompartir')!=null){
     let guardarPosiciones = [];
     var contadorImpresiones = 0;
     var titulo = JSON.parse(localStorage.getItem("InformacionParaCompartir"));
@@ -292,4 +293,5 @@ function load(){
         alert("Arreglo[3] ="+guardarPosiciones[3]);
         alert("Arreglo[4] ="+guardarPosiciones[4]);
         */
+}
 }
