@@ -5,10 +5,10 @@
         <link rel="stylesheet"  href="../css/paginaWEB.css"/>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="../js/principal.js"> </script>
-        <meta charset='utf-8'>  
-        <script src="../js/principal.js"></script>
+        <meta charset='utf-8'> 
+        <script src="../js/principal.js"></script> 
     </head>
-    <body>
+    <body onload="mostrarVisitantes()">
         <header>
             <nav id="titulo">
                 <table class="indice"> 
@@ -39,6 +39,7 @@
                 <li> <a href="gastronomia.html">Lic. En Gastronomía</a> </li>
                 </ul>
             </nav>
+            <center> <p id="visitante" class="visitante"></p></center>
         </header>
 
         <aside class="main">
