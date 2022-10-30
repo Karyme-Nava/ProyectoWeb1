@@ -3,10 +3,11 @@
     <head>
         <title> Recomendaciones y consejos </title>
         <link rel="stylesheet"  href="../css/paginaWEB.css"/>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="../js/principal.js"> </script>
         <meta charset='utf-8'>  
     </head>
-    <body>
+    <body onload="mostrarVisitantes()">
         <header>
             <nav id="titulo">
                 <table class="indice"> 
@@ -15,10 +16,14 @@
                     <th> 
                         <nav id="inicioSesion"> 
                             <br>
-                            <a href="registro.html">Registrarse</a>
-                            <a href="iniciarSesion.html">/ Iniciar Sesión</a>
+                            <a href="registro.html" id="btnRegistro">Registrarse</a>
+                            <a href="iniciarSesion.html" id="btnInicioS">/ Iniciar Sesión</a>
+                            <p id="mostrarUsuario"></p>
                         </nav>
                     </th>
+                    <th>
+                        <button type="button" id="btnCerrarS" class="CerrarSesion" onclick="cerrarSesion()">Cerrar Sesion</button>
+                      </th>
                 </table>
             </nav>
             <nav id="navegacion">    
@@ -33,6 +38,7 @@
                 <li> <a href="../html/gastronomia.html">Lic. En Gastronomía</a> </li>
                 </ul>
             </nav>
+            <center> <p id="visitante" class="visitante"></p></center>
         </header>
 
         <aside class="main">
@@ -178,8 +184,34 @@
                 </form>
             </article>
         </section> 
+      <section>
+        <br><br><br> <br> <br><br>
+            <br><br><br><br><br><br><br><br><br><br>
         <footer>
-            <!-- <img src="../img/.png"/ width="100%" height="50" alt="Aqui pondremos nuestra informacion de contacto si les parece"></footer> -->
-            <!-- pie de pagina -->
+            <div class="footer-content">
+                <h3>Instituto Tecnológico Superior Del Sur De Guanajuato</h3>
+                <p>Contáctenos<br>
+                    Redes Sociales 
+                </p>
+                <ul class="socials">
+                    <li><a href="https://es-la.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                    <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                </ul>
+            </div>
+            <div class="footer-bottom" >
+                <p><a href="#">ITSUR</a>  </p>
+                        <div class="footer-menu">
+                          <ul class="f-menu">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="">About</a></li>
+                            <li><a href="">Contact</a></li>
+                            <li><a href="">Blog</a></li>
+                          </ul>
+                        </div>
+            </div>
+        </footer>
+      </section>
     </body>
 </html>

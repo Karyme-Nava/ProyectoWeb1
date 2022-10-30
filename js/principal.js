@@ -135,7 +135,7 @@ function obtenerUsuario(){
             var log=datos[index].log;
             if(log){
                 document.getElementById("mostrarUsuario").style.display='inline';
-                document.getElementById("mostrarUsuario").innerHTML=mail.substring(0,8);
+                document.getElementById("mostrarUsuario").innerHTML=mail.substring(0,9);
                 document.getElementById("btnRegistro").style.display='none';
                 document.getElementById("btnInicioS").style.display='none';
                 document.getElementById("btnCerrarS").style.display='block';
@@ -229,6 +229,7 @@ function insertar(obj){
 })*/
 
 function load(){
+    obtenerUsuario();
     if(localStorage.getItem('InformacionParaCompartir')!=null){
     let guardarPosiciones = [];
     var contadorImpresiones = 0;
@@ -236,53 +237,41 @@ function load(){
 
     for (var i = 0; i < 5; i++) {
         if(titulo[i].NombreMateria == "Programación web I"){
+            
             /* contadorImpresiones++; */
             if(contadorImpresiones==0){
                 this.document.getElementById("title").innerHTML= titulo[i].Titulo;
                 this.document.getElementById("information").innerHTML= titulo[i].InformacionCompartir;
                 this.document.getElementById("information").style.borderColor = "#AEBB61";
-                //this.document.getElementsByClassName("information")[0].className = ""
-
-              //  $(information).css("border-bottom-color: #AEBB61");
+                this.document.getElementById("information").style.visibility= "visible";
                 contadorImpresiones++;
-                //guardarPosiciones[i] = contadorImpresiones;
-               // alert("Entro aqui en el contador == 0"+", la i es "+i);
             }
             else if(titulo[i].NombreMateria == "Programación web I" && contadorImpresiones==1){
                 this.document.getElementById("title2").innerHTML= titulo[i].Titulo;
                 this.document.getElementById("information2").innerHTML= titulo[i].InformacionCompartir;
                 this.document.getElementById("information2").style.borderColor = "#AEBB61";
-           //     $(information2).css("border-bottom-color: #AEBB61");
+                this.document.getElementById("information2").style.visibility= "visible";    
                 contadorImpresiones++;
-                //guardarPosiciones[i] = contadorImpresiones;
-                //alert("Entro aqui en el contador == 1"+", la i es "+i);
             } else if(titulo[i].NombreMateria == "Programación web I" && contadorImpresiones==2){
                 this.document.getElementById("title3").innerHTML= titulo[i].Titulo;
                 this.document.getElementById("information3").innerHTML= titulo[i].InformacionCompartir;
                 this.document.getElementById("information3").style.borderColor = "#AEBB61";
-             //   $(information3).css("border-bottom-color: #AEBB61");
-                //border-bottom-color: #AEBB61; 
+                this.document.getElementById("information3").style.visibility= "visible";
                 contadorImpresiones++;
-                //guardarPosiciones[i] = contadorImpresiones;
-               // alert("Entro aqui en el contador == 2"+", la i es "+i);
             }
             else if(titulo[i].NombreMateria == "Programación web I" && contadorImpresiones==3){
                 this.document.getElementById("title4").innerHTML= titulo[i].Titulo;
                 this.document.getElementById("information4").innerHTML= titulo[i].InformacionCompartir;
                 this.document.getElementById("information4").style.borderColor = "#AEBB61";
+                this.document.getElementById("information4").style.visibility= "visible";
                 contadorImpresiones++;
-              //  $(information4).css("border-bottom-color: #AEBB61");
-                //guardarPosiciones[i] = contadorImpresiones;
-               // alert("Entro aqui en el contador == 3"+", la i es "+i);
             }
             else if(titulo[i].NombreMateria == "Programación web I" && contadorImpresiones==4){
                 this.document.getElementById("title5").innerHTML=  titulo[i].Titulo;
                 this.document.getElementById("information5").innerHTML= titulo[i].InformacionCompartir;
                 this.document.getElementById("information5").style.borderColor = "#AEBB61";
+                this.document.getElementById("information5").style.visibility= "visible";
                 contadorImpresiones++;
-                //$(information5).css("border-bottom-color: #AEBB61");
-                //guardarPosiciones[i] = contadorImpresiones;
-               // alert("Entro aqui en el contador == 4"+", la i es "+i);
             }
         }
     }    
